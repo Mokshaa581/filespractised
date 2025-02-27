@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placement Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">Lorem, ipsum.</h1>
+      <p id="description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas,
+        repellendus. Eos minima nisi molestias sunt, quia odit harum repudiandae
+        inventore.
+      </p>
+    </div>
+    <div class="content">
+      <form action="">
+        <div class="formcontent">
+          <label for="name">Enter Your Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+        <div class="formcontent">
+          <label for="email">Enter Your Email id</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="Enter Your email id"
+            required
+          />
+        </div>
+        <div class="formcontent">
+          <label for="number">Enter Your Passout Year</label>
+          <input
+            type="number"
+            name="passout"
+            id="number"
+            min="2022"
+            max="2026"
+            placeholder="Enter Your passout year"
+          />
+        </div>
+        <div class="formcontent">
+          <label for="department">Your Department</label>
+          <select name="department" id="dropdown">
+            <option value="">Choose Department</option>
+            <option value="1">Computer Scince and Engineering</option>
+            <option value="2">
+              Computer Science and Engineering (Data Science)
+            </option>
+            <option value="3">
+              Computer Science and Engineering (Cyber Security)
+            </option>
+            <option value="4">Electrical and Communications Engineering</option>
+            <option value="5">Civil Engineering</option>
+            <option value="6">Electical Engineering</option>
+          </select>
+        </div>
+        <div class="formcontent">
+          <label for="">Your mode of preference for the interview</label>
+          <input
+            type="radio"
+            name="interview-mode"
+            id=""
+            value="online"
+            checked
+          />
+          Online <br />
+          <input type="radio" name="interview-mode" id="" value="offline" />
+          Offline<br />
+          <input type="radio" name="interview-mode" id="" value="both" /> Both
+        </div>
+        <div class="formcontent">
+          <label for="">What kind of role do you Prefer</label>
+          <input type="checkbox" name="" id="" value="uiux" /> UI/UX Designer
+          <br />
+          <input type="checkbox" name="" id="" value="da" /> Data Analyst<br />
+          <input type="checkbox" name="" id="" value="web" /> Web Devloper<br />
+          <input type="checkbox" name="" id="" value="se" /> Software
+          Engineer<br />
+          <input type="checkbox" name="" id="" value="vo" /> Valuation
+          Officer<br />
+          <input type="checkbox" name="" id="" value="qs" /> Quantity
+          Surveyor<br />
+          <input type="checkbox" name="" id="" value="es" /> Embedded Software
+          Engineer
+        </div>
+        <div class="formcontent">
+          <label for="">Upload Your Picture</label>
+          <input type="file" name="" id="" />
+        </div>
+        <div class="formcontent">
+          <label for="">Upload Your Resume</label>
+          <input type="file" name="" id="" />
+        </div>
+        <div class="formcontent">
+          <label>Write Your Bio</label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="3"
+            placeholder="write your bio"
+          ></textarea>
+        </div>
+        <div class="formcontent">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
